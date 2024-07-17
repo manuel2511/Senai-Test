@@ -1,0 +1,58 @@
+Descrição:
+O sistema deve permitir que um usuário se cadastre utilizando um nome, email e senha válidos. 
+Se os dados forem válidos, o usuário será redirecionado para a página de boas-vindas com uma mensagem de boas-vindas. 
+Se as senhas não corresponderem ou o email já estiver cadastrado, uma mensagem de erro será exibida.
+
+Caso de Teste 1: Cadastro com Dados Válidos
+
+Pré-condição: O usuário não está registrado no sistema.
+Ações:
+Acessar a página de cadastro.
+Preencher o campo de nome com "João".
+Preencher o campo de email com "joao@example.com".
+Preencher o campo de senha com "senha123".
+Preencher o campo de confirmação de senha com "senha123".
+Clicar no botão "Cadastrar".
+Asserções:
+Verificar que o usuário é redirecionado para a página "/welcome".
+Verificar que a mensagem "Welcome" é exibida na página de boas-vindas.
+Falhas Possíveis:
+O usuário não é redirecionado e permanece na página de cadastro.
+A URL não é "/welcome".
+A mensagem "Welcome" não é exibida na página de boas-vindas.
+
+
+Caso de Teste 2: Cadastro com Senhas Não Correspondentes
+
+Pré-condição: O usuário não está registrado no sistema.
+Ações:
+Acessar a página de cadastro.
+Preencher o campo de nome com "João".
+Preencher o campo de email com "joao@example.com".
+Preencher o campo de senha com "senha123".
+Preencher o campo de confirmação de senha com "senha".
+Clicar no botão "Cadastrar".
+Asserções:
+Verificar que a mensagem de erro "Senhas não correspondem" é exibida.
+Verificar que o usuário permanece na página de cadastro.
+Falhas Possíveis:
+A mensagem de erro não é exibida.
+O usuário é redirecionado para outra página mesmo com senhas não correspondentes.
+
+
+Caso de Teste 3: Cadastro com E-mail Já Cadastrado
+
+Pré-condição: O email "a@a.com" já está registrado no sistema.
+Ações:
+Acessar a página de cadastro.
+Preencher o campo de nome com "Manuel".
+Preencher o campo de email com "a@a.com".
+Preencher o campo de senha com "123".
+Preencher o campo de confirmação de senha com "123".
+Clicar no botão "Cadastrar".
+Asserções:
+Verificar que a mensagem de erro "E-mail já cadastrado" é exibida.
+Verificar que o usuário permanece na página de cadastro.
+Falhas Possíveis:
+A mensagem de erro não é exibida.
+O usuário é redirecionado para outra página mesmo com email já cadastrado.

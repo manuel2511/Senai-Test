@@ -1,0 +1,23 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "mocha": "^10.6.0",
+    "sinon": "^18.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
